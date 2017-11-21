@@ -1,0 +1,20 @@
+##open door on walk by with auto close timer##
+
+(0:7) When someone moves into position (##,##),
+ (1:94) and timer # is still counting down,
+    (5:50) set countdown timer # to go off in 5 seconds.
+(0:7) When someone moves into position (##,##),
+    (5:50) set countdown timer # to go off in 5 seconds,
+    (5:63) place wall 0 at (##,##).
+(0:50) When countdown timer # goes off,
+    (5:63) place wall # at (##,##).
+(0:7) When someone moves into position (##,##),
+    (5:15) move the triggering furre to (##,##), or to someplace nearby if it's occupied.
+###############################################################################    
+## Door is set to auto open when someone walks into a spot in front of it    ##
+## that is one before the space that teloports said person through the door. ##
+## timer restart was added to keep the timer from nulling out when activated ## 
+## when still counting down.                                                 ##
+###############################################################################
+
+
